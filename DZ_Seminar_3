@@ -1,0 +1,86 @@
+/*Задача 19
+Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+*/
+
+/*Console.WriteLine("Введите пятизначное  число");
+int stringNumber = Convert.ToInt32(Console.ReadLine());
+if (Number(0) = Number(4) && Number(1)= Number(3))//Создали условие - сравнили симметричные индексы пятизначного числа
+    {
+        Console.WriteLine("Пятизначное число - палиндромом");
+    }
+else
+    {
+        Console.WriteLine("Пятизначное число - не палиндромом");
+    }
+*/
+
+
+/*Задача 21
+
+Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+*/
+
+/*Console.WriteLine("Введите координату точки А по оси Х:");
+int X1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси Y:");
+int Y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси Z:");
+int Z1 = Convert.ToInt32(Console.ReadLine());//Ввели координаты точки А
+
+
+Console.WriteLine("Введите координату точки B по оси Х:");
+int X2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату точки B по оси Y:");
+int Y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату точки B по оси Z:");
+int Z2 = Convert.ToInt32(Console.ReadLine());// Ввели координаты точки В
+
+var  result = Math.Sqrt(Math.Pow((X2-X1),2) + Math.Pow((Y2-Y1),2) + Math.Pow((Z2-Z1),2));// Вычислили расстояние между точками
+Console.WriteLine(Math.Round(result,3));// Напечатали результат
+*/
+
+/*Задача 23
+
+Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+*/
+
+/*Console.WriteLine("Введите число N");
+int N = Convert.ToInt32(Console.ReadLine());
+int i = 1;
+while (i<=N)
+{
+    Console.Write(Math.Pow(i,3) + "\t");
+}
+// Еще один способ через оператор For
+for (int i=1; i<=N; i=1)
+{
+    Console.Write(Math.Pow(i,3));
+}
+
+/*Доп. задание №1:
+Представим банк, в котором алгоритм начисления процента по вкладу зависит от суммы вклада. 
+На вход будет подаваться число (сумма вклада). При значении меньше 100, будет начислено 5 %, 
+если значение находится в диапазоне от ста до двухсот — 7 %, если больше — 10 %. 
+Отработав, программа должна вывести общую сумму с начисленными процентами.
+*/
+
+/*Console.WriteLine("Введите сумму, кторую Вы вносите в Банк");
+int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите срок на который Вы вносите деньги в Банк");
+int M = Convert.ToInt32(Console.ReadLine());
+int S;
+if (N<100)
+{
+    S=(N+(M*(5/365)));
+    Console.WriteLine($"Общая сумма по вкладу в Банке с процентами составляет: {S}");
+}
+if (N>100 && N<200)
+{
+    S=(N+(M*(7/365)));
+    Console.WriteLine($"Общая сумма по вкладу в Банке с процентами составляет: {S}");
+}
+if (N>200)
+{
+    S=(N+(M*(10/365)));
+    Console.WriteLine($"Общая сумма по вкладу в Банке с процентами составляет: {S}");
+}
